@@ -70,9 +70,22 @@ Models:
 
 | Model       | Avg. Accuracy | Avg. ROI
 | -----------  |------------- | -------
-| Bet Favorite      | XX.XX%       | XX.XX%
-| Bet Underdog      | XX.XX%       | XX.XX%
-| Bet Favorite      | XX.XX%       | XX.XX%
+|Do Not Bet Within Interquartile Range| 49.9% | -17.9% 
+|Must Bet: Median Difference as Split | 62.9% | -5.1%
+|Do Not Bet Within Quartile 1 and Median | 66% | -3.2%  
+|Must Bet: Quartile 1 Difference as Split | 62.9% | -5.1%  
+|Must Bet: Mean Difference as Split | 62.9% | -5.1% 
+|Do Not Bet Within Quartile 1 and Mean | 66.1% | -2.9%
+
+| Model       | Avg. Accuracy | Avg. ROI
+| -----------  |------------- | -------
+|Do Not Bet Within Interquartile Range| 50.1% | -17.8% 
+|Must Bet: Median Difference as Split | 62.9% | -5.1%
+|Do Not Bet Within Quartile 1 and Median | 71.2% | 2.7%  
+|Must Bet: Quartile 1 Difference as Split | 62.9% | -5.1%  
+|Must Bet: Mean Difference as Split | 62.9% | -5.1% 
+|Do Not Bet Within Quartile 1 and Mean | 70.4% | 1.6%
+
 
 ### Machine Learning Model Results
 #### Bet Uniform
@@ -126,6 +139,14 @@ Make sure you are in Light Mode for best viewing!
 
 
 ### Four Factor Models
+<img src="Key Results Images/FF Accuracy Running Data.png"
+     style="float: left; margin-right: 10px;"/>
+<img src="DataMining-FinalProject/Key Results Images/FF ROI Running Data.png"
+     style="float: left; margin-right: 10px;"/>
+<img src="Key Results Images/FF ROI Running Season Data.png"
+     style="float: left; margin-right: 10px;"/>
+<img src="Key Results Images/FF Acuracy Running Season Data.png"
+     style="float: left; margin-right: 10px;"/>
 
 
 ### Machine Learning Models
