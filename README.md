@@ -139,13 +139,13 @@ Make sure you are in Light Mode for best viewing!
 
 
 ### Four Factor Models
-<img src="Key Results Images/FF Accuracy Running Data.png"
+<img src="graphics/FF Accuracy Running Data.png"
      style="float: left; margin-right: 10px;"/>
-<img src="DataMining-FinalProject/Key Results Images/FF ROI Running Data.png"
+<img src="graphics/FF ROI Running Data.png"
      style="float: left; margin-right: 10px;"/>
-<img src="Key Results Images/FF ROI Running Season Data.png"
+<img src="graphics/FF ROI Running Season Data.png"
      style="float: left; margin-right: 10px;"/>
-<img src="Key Results Images/FF Acuracy Running Season Data.png"
+<img src="graphics/FF Acuracy Running Season Data.png"
      style="float: left; margin-right: 10px;"/>
 
 
