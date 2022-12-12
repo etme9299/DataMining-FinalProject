@@ -122,18 +122,18 @@ Models:
 3. **Positive ROI:** ML models are capable of returning a positive ROI in sports betting applications. 
 
 
-## Plots
+## Plots: `\graphics`
 Make sure you are in Light Mode for best viewing!
 ### Comparissons
-<img src="graphics/ML ROI by betting strategy.png"
+<img src="graphics/Overall ROI Comparisson.png"
      style="float: left; margin-right: 10px;"/>
-<img src="graphics/ROI by betting strategy.png"
+<img src="graphics/ROI by strategy ML.png"
      style="float: left; margin-right: 10px;" />
 
 ### Baseline Models
-<img src="graphics/Baseline Acc.png"
+<img src="graphics/Accuracy baseline boxplot.png"
      style="float: left; margin-right: 10px;"/>
-<img src="graphics/Baseline ROI.png"
+<img src="graphics/ROI baseline boxplot.png"
      style="float: left; margin-right: 10px;" />
 
 
@@ -143,18 +143,19 @@ Make sure you are in Light Mode for best viewing!
      style="float: left; margin-right: 10px;"/>
 <img src="graphics/FF ROI Running Data.png"
      style="float: left; margin-right: 10px;"/>
-<img src="graphics/FF ROI Running Season Data.png"
-     style="float: left; margin-right: 10px;"/>
 <img src="graphics/FF Acuracy Running Season Data.png"
      style="float: left; margin-right: 10px;"/>
+<img src="graphics/FF ROI Running Season Data.png"
+     style="float: left; margin-right: 10px;"/>
+
 
 
 ### Machine Learning Models
-<img src="graphics/Uniform Acc.png"
+<img src="graphics/Accuracy Uniform ML boxplot.png"
      style="float: left; margin-right: 10px;"/>
-<img src="graphics/Uniform ROI.png"
+<img src="graphics/ROI Uniform ML boxplot.png"
      style="float: left; margin-right: 10px;" />
-<img src="graphics/Edge Acc.png"
+<img src="graphics/Accuracy Edge ML boxplot.png"
      style="float: left; margin-right: 10px;" />
-<img src="graphics/Edge ROI.png"
+<img src="graphics/ROI Edge ML boxplot.png"
      style="float: left; margin-right: 10px;" />
