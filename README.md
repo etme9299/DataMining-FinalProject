@@ -1,13 +1,14 @@
 # DataMining-FinalProject
-Ethan Meyer, Ishika Patel
+Authors: Ethan Meyer, Ishika Patel
 
 ## Project Description
+Recently, there has been an explosion of interest in leveraging machine learning models in the context of sports analytics. In this paper, we apply data mining techniques to inform bets on match outcomes of the NCAA March Madness basketball tournament using aggreagated season statistics, tournament information, and team ranking. Specifically, we evaluate four classification models (Four Factor Model, Logistic Regression, K-Nearest Neighbors, and Support Vector Machine) against a series of baseline methods. Using various betting strategies and historical Vegas odds data, we evaluate the performance of our models by computing their accuracy and return on investment (ROI). Our results demonstrate the potential of machine learning for obtaining a positive ROI in sports betting and suggest that similar approaches may be applicable to other sports betting scenarios. We conclude our paper with a discussion of insights gained and propose future work.
 
 
+## Introduction
+Over the last decade, sports betting has experienced a meteoric rise in popularity. In the 2022 tourney alone, March Madness—the annual NCAA Basketball Tournament— was expected to garner approximately  3.1 billion in bets on platforms such as FanDuel, DraftKings, and BetMGM. With this incredible amount of par- ticipation, increasing rates of sports betting legality, and the ample amount of historical data available on NCAA teams, predicting the winner NCAA basketball matches is a prime subject for investiga- tion. 
 
-## Applications
-
-
+March Madness matches are renowned for their unpredictability. In fact, it is one of the main reasons the tournament garners so much attention from fans. Factors such as volatile player contribution on the court, streaks in game-play, buzzer beaters, and more all come together to form "Cinderella Stories" - situations in which teams achieve far greater successes than spectators could have reasonably expected. These dynamic aspects of the game engage fans and present a rewarding challenge—that of predicting game winners—for data miners to approach.
 
 ## Software Prerequisites
 
@@ -18,43 +19,121 @@ Ethan Meyer, Ishika Patel
 
 ## List of Relevant Python Packages
 
-```bash
 
-```
+* Pandas.DataFrame
+* numpy
+* matplotlib
+* sklearn
+* Levenshtein
 
-## Data Mining Pipeline
-Examined and resolved issues within data, filling in missing information
 
-### Data Cleaning
-Familiarized  ourselves with structure and information available within data sets 
 
-### Data Exploration
-Developed methodology for connecting numerous data sources
+## Data Transformation
 
-### Computation
-Aggregated and computed advanced statistics and Performed betting unit conversion
+#### Data Cleaning
+`/preprocessing/Moneyline Data Pre-Processing.ipynb`: Examined and resolved issues within data, filling in missing information
 
-### Data Warehouse
-Precomputed all potential features and Stored in static files to be accessed by models
+#### Data Exploration
+`/models/Ethan's Sandbox.ipynb`: Familiarized  ourselves with structure and information available within data sets 
 
-### Data Modeling
-1. Identified potential classification models:
-- 4-Factor Model
-- Logistic Regression
-- Support Vector Machines
-- K Nearest Neighbors
+#### Data Integration
+`/preprocessing/Moneyline Data Pre-Processing.ipynb`: Developed methodology for connecting numerous data sources
+
+#### Data Computation 
+`/models/ML Model Feature Computation.ipynb`: Aggregated and computed advanced statistics, performed betting unit conversion
+
+## Data Modeling
+1. Identified potential classification models
 2. Hyperparametrized models
-3. Outlined potential betting strategies
-4. Calculated performance statistics
-5. Accuracy & ROI
+3. Outlined potential betting strategies (bet uniform, bet edge)
+4. Calculated performance statistics (Accuracy & ROI)
 
-### Pattern Evaluation
-Examined model and betting strategy performance results, Analyzed Accuracy-ROI trade off, Unpacked feature importance, Contextualized findings, Proposed future work 
+Models:
+- 4-Factor Model (Ishika Patel): `models/FourFactors.ipynb`
+- Logistic Regression (Ethan Meyer): `models/Macine Learning Models.ipynb`
+- K Nearest Neighbors (Ethan Meyer): `models/Macine Learning Models.ipynb`
+- Support Vector Machines (Ethan Meyer): `models/Macine Learning Models.ipynb`
+
+## Evaluation
+
+### Baseline Results: 
+`graphics/Data Visualizations.ipynb`
+
+| Model       | Avg. Accuracy | Avg. ROI
+| -----------  |------------- | -------
+| Bet Favorite      | 70.04%       | -5.49%
+| Bet Underdog      | 29.35%       | -4.35%
+| Bet Favorite      | 62.85%       | -3.83%
+
+### Four Factor Model Results
+`models/FourFactors.ipynb`
+
+| Model       | Avg. Accuracy | Avg. ROI
+| -----------  |------------- | -------
+| Bet Favorite      | XX.XX%       | XX.XX%
+| Bet Underdog      | XX.XX%       | XX.XX%
+| Bet Favorite      | XX.XX%       | XX.XX%
+
+### Machine Learning Model Results
+#### Bet Uniform
+`graphics/Data Visualizations.ipynb`
+
+| Model       | Avg. Accuracy | Avg. ROI
+| -----------  |------------- | -------
+| Logistic Regression     | 71.32%       | +0.44%
+| K-Nearest Neighbors      | 66.16%       | -1.28%
+| Support Vector Machine      | 71.06%       | -0.43%
+
+#### Bet Edge
+`graphics/Data Visualizations.ipynb`
+
+| Model       | Avg. Accuracy | Avg. ROI
+| -----------  |------------- | -------
+| Logistic Regression     | 51.21%       | +3.13%
+| K-Nearest Neighbors      | 36.47%       | -0.45%
+| Support Vector Machine      | 44.03%       | -0.80%
+
 
 
 ## Key Findings
-1. Between models,  accuracy is not always the best performance measure when optimizing for ROI.
-2. Betting based on predetermined weights of a model may not be the best strategy, we need to consider even more enhanced betting strategies
-3. Enhanced betting strategies have the potential to drive higher returns.
-4. Classification models are capable of returning a positive ROI in sports   betting applications.
+### Four Factor Model
+1. **Incorporating Historical Data:** Between models, leveraging years worth of historical data when not updating a model’s attribute weights does drive higher returns.
+2. **Betting strategy performance:** Betting based on predetermined weights of a model may not be the best strategy, we need to consider even more enhanced betting strategies.
 
+### Machine Learning Model Results
+1. **Accuracy, ROI relationship:** Between models, bet accuracy is not always the best performance measure when optimizing for ROI. 
+
+2. **Betting strategy performance:** Enhanced betting strategies have the potential to drive higher returns.
+
+
+3. **Positive ROI:** ML models are capable of returning a positive ROI in sports betting applications. 
+
+
+## Plots
+Make sure you are in Light Mode for best viewing!
+### Comparissons
+<img src="graphics/ML ROI by betting strategy.png"
+     style="float: left; margin-right: 10px;"/>
+<img src="graphics/ROI by betting strategy.png"
+     style="float: left; margin-right: 10px;" />
+
+### Baseline Models
+<img src="graphics/Baseline Acc.png"
+     style="float: left; margin-right: 10px;"/>
+<img src="graphics/Baseline ROI.png"
+     style="float: left; margin-right: 10px;" />
+
+
+
+### Four Factor Models
+
+
+### Machine Learning Models
+<img src="graphics/Uniform Acc.png"
+     style="float: left; margin-right: 10px;"/>
+<img src="graphics/Uniform ROI.png"
+     style="float: left; margin-right: 10px;" />
+<img src="graphics/Edge Acc.png"
+     style="float: left; margin-right: 10px;" />
+<img src="graphics/Edge ROI.png"
+     style="float: left; margin-right: 10px;" />
